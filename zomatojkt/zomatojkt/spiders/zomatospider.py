@@ -18,7 +18,7 @@ class ZomatospiderSpider(scrapy.Spider):
         
         for i in range(len(list_restaurant)):
             name = response.css('a.result-title.hover_feedback.zred.bold.ln24.fontsize0::text')
-            url = response.css('a.result-title.hover_feedback.zred.bold.ln24.fontsize0::attr[href]')
+            url = response.css('a.result-title.hover_feedback.zred.bold.ln24.fontsize0::attr(href)')
             
             data['url'] = url[i].get()
             data['name'] = name[i].get()
