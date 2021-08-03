@@ -11,3 +11,4 @@ class ZomatojktItem(scrapy.Item):
     name = scrapy.Field()
     url = scrapy.Field()
     address = scrapy.Field()
+    rate = scrapy.Field()
