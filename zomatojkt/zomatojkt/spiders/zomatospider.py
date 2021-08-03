@@ -22,11 +22,13 @@ class ZomatospiderSpider(scrapy.Spider):
             address = response.css('div.col-m-16.search-result-address.grey-text.nowrap.ln22::text')
             rate = response.css('span.rating-value::text')
             votes = response.css('span.review-count.medium::text')
+            location = response.css(f'#orig-search-list > div:nth-child({i+1}) > div.content > div > article > div.pos-relative.clearfix > div > div.col-s-16.col-m-12.pl0 > div:nth-child(1) > div.col-s-12 > a.ln24.search-page-text.mr10.zblack.search_result_subzone.left > b::text')
             
             data['url'] = url[i].get()
             data['name'] = name[i].get()
             data['address'] = address[i].get()
             data['rate'] = rate[i].get()
             data['votes'] = votes[i].get()
+            data['location'] = location.get()
             
             yield data
