@@ -15,3 +15,4 @@ class ZomatojktItem(scrapy.Item):
     votes = scrapy.Field()
     location = scrapy.Field()
     rest_type = scrapy.Field()
+    cuisines = scrapy.Field()
