@@ -23,6 +23,6 @@ class ZomatospiderSpider(scrapy.Spider):
             
             data['url'] = url[i].get()
             data['name'] = name[i].get()
-            data['address'] = name[i].get()
+            data['address'] = address[i].get()
             
             yield data
