@@ -16,3 +16,4 @@ class ZomatojktItem(scrapy.Item):
     location = scrapy.Field()
     rest_type = scrapy.Field()
     cuisines = scrapy.Field()
+    approx_cost  = scrapy.Field()
