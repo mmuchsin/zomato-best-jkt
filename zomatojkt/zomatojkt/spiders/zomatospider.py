@@ -21,10 +21,12 @@ class ZomatospiderSpider(scrapy.Spider):
             url = response.css('a.result-title.hover_feedback.zred.bold.ln24.fontsize0::attr(href)')
             address = response.css('div.col-m-16.search-result-address.grey-text.nowrap.ln22::text')
             rate = response.css('span.rating-value::text')
+            votes = response.css('span.review-count.medium::text')
             
             data['url'] = url[i].get()
             data['name'] = name[i].get()
             data['address'] = address[i].get()
             data['rate'] = rate[i].get()
+            data['votes'] = votes[i].get()
             
             yield data
