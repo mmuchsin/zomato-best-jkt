@@ -14,7 +14,7 @@ NEWSPIDER_MODULE = 'zomatojkt.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36 (+https://www.zomato.com)'
+# USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36 (+http://www.zomato.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
