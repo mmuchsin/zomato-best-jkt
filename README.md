@@ -1,6 +1,6 @@
 # Scrap Best Restaurant in Jakarta
 
-A Scrapy project to scrape restaurant information from Zomato. Only best restaurant information from jakarta have been scraped.
+A Scrapy project to scrape restaurant information from [zomato](https://www.zomato.com/jakarta/best-restaurants). Only best restaurant information from Jakarta have been scraped.
 
 ## Data Description
 
