@@ -26,6 +26,7 @@ class ZomatospiderSpider(scrapy.Spider):
             rest_type = response.css(f'#orig-search-list > div:nth-child({i+1}) > div.content > div > article > div.pos-relative.clearfix > div > div.col-s-16.col-m-12.pl0 > div:nth-child(1) > div.col-s-12 > a.ln24.search-page-text.mr10.zblack.search_result_subzone.left > b::text')
             cuisine1 = response.css(f'#orig-search-list > div:nth-child({i+1}) > div.content > div > article > div.search-page-text.clearfix.row > div:nth-child(1) > span.col-s-11.col-m-12.nowrap.pl0 > a:nth-child(1)::text')
             cuisine2 = response.css(f'#orig-search-list > div:nth-child({i+1}) > div.content > div > article > div.search-page-text.clearfix.row > div:nth-child(1) > span.col-s-11.col-m-12.nowrap.pl0 > a:nth-child(2)::text')
+            approx_cost = response.css(f'#orig-search-list > div > div.content > div > article > div.search-page-text.clearfix.row > div.res-cost.clearfix > span.col-s-11.col-m-12.pl0::text')
             
             data['url'] = url[i].get()
             data['name'] = name[i].get()
@@ -34,5 +35,6 @@ class ZomatospiderSpider(scrapy.Spider):
             data['votes'] = votes[i].get()
             data['location'] = location.get()
             data['cuisines'] = f'{cuisine1.get()}, {cuisine2.get()}'
+            data['approx_cost'] = approx_cost[i].get()
             
             yield data
