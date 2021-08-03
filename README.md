@@ -1,6 +1,6 @@
 # Scrap Best Restaurant in Jakarta
 
-A Scrapy project to scrape restaurant information from [zomato](https://www.zomato.com/jakarta/best-restaurants). Only best restaurant information from Jakarta have been scraped. The data scraped was entirely for educational purposes only. All copyrights for the data is owned by Zomato Media Pvt. Ltd..
+A Scrapy project to scrape restaurant information from [zomato](https://www.zomato.com/jakarta/best-restaurants). Only best rating restaurant information from Jakarta have been scraped. The data scraped was entirely for educational purposes only. All copyrights for the data is owned by Zomato Media Pvt. Ltd..
 
 ## Data Description
 
