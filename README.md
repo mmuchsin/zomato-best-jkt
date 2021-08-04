@@ -20,10 +20,11 @@ url          | the url of the restaurant in the zomato website
 votes        | total number of rating for the restaurant as of the above mentioned date
 
 
-
+<!--
 online_order | whether online ordering is available in the restaurant or not
 book_table   | table book option available or not
 phone        | the phone number of the restaurant
 dish_liked   | dishes people liked in the restaurant
 reviews_list | list of tuples containing reviews for the restaurant, each tuple
 menu_item    | list of menus available in the restaurant
+>
