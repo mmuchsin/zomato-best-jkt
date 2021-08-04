@@ -23,3 +23,13 @@ reviews_list | list of tuples containing reviews for the restaurant, each tuple
 menu_item    | list of menus available in the restaurant
 listed_in (type)    | type of meal
 listed_in (city)   | the neighborhood in which the restaurant is listed
+
+### scrap to csv file
+```
+scrapy crawl zomatospider -o zomato_jkt.csv
+```
+
+### scrap to json file
+```
+scrapy crawl zomatospider -o zomato_jkt.json
+```
