@@ -14,7 +14,7 @@ featured_in  | the neighborhood in which the restaurant is listed
 hours        | restaurant open hours
 location     | the neighborhood in which the restaurant is located
 name         | the name of the restaurant
-rest_type    | restaurant type
+r_type    | restaurant type
 rate         | the overall rating of the restaurant out of 5
 url          | the url of the restaurant in the zomato website
 votes        | total number of rating for the restaurant as of the above mentioned date
