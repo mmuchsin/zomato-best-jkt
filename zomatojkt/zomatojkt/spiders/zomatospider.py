@@ -1,8 +1,6 @@
 import scrapy
 from zomatojkt.items import ZomatojktItem
 from scrapy.loader import ItemLoader
-from urllib.parse import urljoin
-
 
 class ZomatospiderSpider(scrapy.Spider):
     name = 'zomatospider'
